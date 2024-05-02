@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--CD Calculator-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CD Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/cal.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header >
+        <ul class="head">
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/calculators/mortgage.html">Mortgage Calculator</a></li>
+            <li><a href="/calculators/cdCal.html">CD Calculator</a></li>
+            <li><a href="/calculators/annuityCal.html">Annuity Calculator</a></li>
+        </ul>
+    </header>
+    <!--Header-->
+
+    <!--Main-->
+        </main>
+        <div class="calculator">
+            <h1>CD Calculator</h1>
+            <div>
+                <label for="initialDeposit">Initial Deposit ($):</label>
+                <input type="number" id="initialDeposit" min="0" step="0.01">
+            </div>
+            <div>
+                <label for="interestRate">Annual Interest Rate (%):</label>
+                <input type="number" id="interestRate" min="0" step="0.01">
+            </div>
+            <div>
+                <label for="investmentDuration">Investment Duration (years):</label>
+                <input type="number" id="investmentDuration" min="0">
+            </div>
+            <button id="calculateBtn">Calculate</button>
+            <div><label for="result">Value in the future </label>
+                <input type="number" id="result" readonly />
+            </div>
+        </div>
+        </main>
+    <!--Main-->
+
+
+    <script src="/scripts/cd.js"></script>
+</body>
+
+</html>

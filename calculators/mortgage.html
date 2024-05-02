@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--Mortgage Calculator-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mortgage Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/cal.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <ul class="head">
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/calculators/mortgage.html">Mortgage Calculator</a></li>
+            <li><a href="/calculators/cdCal.html">CD Calculator</a></li>
+            <li><a href="/calculators/annuityCal.html">Annuity Calculator</a></li>
+        </ul>
+    </header>
+    <!--Header-->
+    <!--Main-->
+</main>
+
+<div class="calculator">
+    <h1>Mortgage Calculator</h1>
+    <div >
+        <div><label for="priceField" >Home Price</label></div>
+        <input type="number" id="priceField" />
+
+        <div><label for="principal" class="FormLabel">Down payment</label>
+        </div> <input  type="number" id="principal" /></div>
+        
+        <div><label for="loanLengthYears">Loan length (years):</label></div>
+        <div><input type="number" id="loanLengthYears" required></div>
+        
+        <div><label for="annualRate" >Interest Rate</label></div>
+        <div><input type="number" id="annualRate" step="0.01"/></div>
+
+        <button id="CalculateBtn" onclick="calculateMortgage();">Calculate</button>
+       
+        <div><label for="monthlyPayment" class="formLabel">Monthly Payment</label></div>
+        <input type="number" step="0.01" id="monthlyPayment" readonly />
+    </div>
+</div>
+</main>
+    <!--Main-->
+
+
+    <script src="/Scripts/mortgage.js"></script>
+</body>
+
+</html>
